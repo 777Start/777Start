@@ -1,10 +1,9 @@
+import 'dotenv/config';   // 👈 ВАЖНО: первым!
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import generateRouter from "./routes/generate.js";
 
-dotenv.config();
 connectDB();
 
 const app = express();
